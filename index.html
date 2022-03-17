@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Actividad</title>
+  <script src="index.js"> </script>
+</head>
+
+<body>
+
+  <header>
+    <h1>Actividad I</h1>
+
+  </header>
+
+  <section class="exercise">
+
+    <div class="container">
+
+      <div class="container-exercise-choose">
+        <h2>Ejercicio</h2>
+        <table>
+          <tr>
+            <td><label> Ejercicio: </label></td>
+            <td><select onclick=getExerciseText() id="exerciseType" class="op" name="option">
+                <option value="0">I. Numeros Primos</option>
+                <option value="1">II. Sumatoria</option>
+                <option value="2">III. Serie de Fibonacci</option>
+              </select></td>
+            <td><label> Valor de N </label></td>
+            <td><input type="text" id="nValue" name="text"></td>
+            <td><button onclick=getExerciseAnswer()>Calcular</button></td>
+          </tr>
+        </table>
+
+        <br>
+        <p id="exerciseInformation">I. Escriba un programa en JS que reciba un número entero N e imprima todos los
+          números primos desde 1 hasta N. Un número primo es aquel que solo es divisible por el mismo y por el número.
+        </p>
+      </div>
+
+      <div class="container-exercise-answer">
+        <h2>Respuesta</h2>
+        <textarea name="textAresa" id="answer" class="textA" readonly="readonly"></textarea>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div>
+      <p> Jhon Camargo - Desarrollo Web I - 2022-1</p>
+
+      <a href="https://www.cuc.edu.co/">
+        <img src="img\img4.jpg" class="logo" alt="Eventos">
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>
