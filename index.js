@@ -56,7 +56,7 @@ function firstPrime(amountPrime) {
     let primeList = [];
     let num = 2;
 
-    while (amountPrime != num) {
+    while (amountPrime != num-1) {
         if (isPrime(num)) {
             primeList.push(num);
         }
@@ -87,6 +87,11 @@ function fibonacci(amount) {
 
     let fibonacciList = [0, 1];
     let count = amount - 2;
+
+    if(amount == 1){
+        fibonacciList = [0];
+        return fibonacciList;
+    }
 
     while (count != 0) {
         let size = fibonacciList.length;
